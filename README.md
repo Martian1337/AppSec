@@ -45,7 +45,7 @@ Before running the RedPlanet AppSec Training Range, please ensure the following:
 
 ### TL;DR - One-line version to pull image and start environment
 ```bash
-sudo docker pull martiandefense/redplanet-appsec:latest && docker run --privileged --name redplanet-appsec-instance \
+sudo docker pull martiandefense/redplanet-appsec:latest && sudo docker run --privileged --name redplanet-appsec-instance \
   -p 8080:8080 -p 9090:9090 \
   -p 8087:3000 \
   -p 8082:8080 -p 8083:8087 -p 8084:8000 \
