@@ -58,15 +58,13 @@ This environment includes the following intentionally vulnerable applications an
 
 | Service        | Description                                                  | Port(s)                  | URL (s)
 |----------------|--------------------------------------------------------------|--------------------------| ---------------------- |
-| WebGoat        | Classic OWASP insecure Java app                              | 8080, 9090               | [http://127.0.0.1:8080//WebGoat/login](http://127.0.0.1:8080/WebGoat/login) |
+| WebGoat        | Classic OWASP insecure Java app                              | 8080, 9090               | [http://localhost:8080/WebGoat/login](http://localhost:8080/WebGoat/login) |
 | Juice Shop     | Modern insecure web app with rich OWASP coverage             | 8087                     | [http://localhost:8087](http://localhost:8087)|
-| DVWA           | PHP/MariaDB web application                                  | 8085                     | [http://localhost:8085](http://localhost:8085) |
 | crAPI          | "Completely Ridiculous API" for API security hands-on labs   | Multiple (8082–8084, 8888, 8443) | [http://localhost:8888](http://localhost:8888) |
 | MailHog        | Email testing interface for crAPI mail features              | 8025                     | [http://localhost:8025](http://localhost:8025) |
 | ------         |  
 | PostgreSQL     | Backend DB for crAPI                                         | Internal                 |
 | MongoDB        | NoSQL DB used by crAPI                                       | Internal                 |
-| mySQL          | MySQL DB for DVWA                                            | Internal                 |
 
 
 
@@ -79,6 +77,6 @@ docker pull martiandefense/redplanet-appsec:latest
 ### Step 2. Start the environment
 
 ```bash
-docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
+sudo docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
 ```
 ---
