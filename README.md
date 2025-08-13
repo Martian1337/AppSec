@@ -86,7 +86,7 @@ docker pull martiandefense/redplanet-appsec:latest
 ### Step 2. Start the environment
 
 ```bash
-sudo docker run --privileged --name redplanet-appsec-instance \
+sudo docker run --privileged --name redplanet-appsec \
   -p 8080:8080 -p 9090:9090 \
   -p 8087:3000 \
   -p 8082:8080 -p 8083:8087 -p 8084:8000 \
