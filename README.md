@@ -22,9 +22,10 @@ Before running the RedPlanet AppSec Training Range, please ensure the following:
     Download and install Docker Desktop from:  
     [https://docs.docker.com/desktop/install/](https://docs.docker.com/desktop/install/)
 
-  - **Linux (Ubuntu example)**  
-    Follow installation steps at:  
-    [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+  - **Convenience script works on most Linux systems**  
+    ```bash
+    curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh ./get-docker.sh
+    ```
 
   - **Official Docker Hub Quickstart** guide (general overview):  
     [https://docs.docker.com/docker-hub/quickstart/](https://docs.docker.com/docker-hub/quickstart/)
@@ -47,15 +48,7 @@ Before running the RedPlanet AppSec Training Range, please ensure the following:
 
 ### TL;DR - One-line version to pull image and start environment
 ```bash
-sudo docker pull martiandefense/redplanet-appsec:latest && sudo docker run --privileged --name redplanet-appsec-instance \
-  -p 8080:8080 -p 9090:9090 \
-  -p 8087:3000 \
-  -p 8082:8080 -p 8083:8087 -p 8084:8000 \
-  -p 8888:80 -p 30080:80 \
-  -p 8443:443 -p 30443:443 \
-  -p 8025:8025 \
-  -p 8085:80 \
-  martiandefense/redplanet-appsec:latest
+sudo docker pull martiandefense/redplanet-appsec:latest && docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
 ```
 
 
@@ -86,14 +79,6 @@ docker pull martiandefense/redplanet-appsec:latest
 ### Step 2. Start the environment
 
 ```bash
-sudo docker run --privileged --name redplanet-appsec \
-  -p 8080:8080 -p 9090:9090 \
-  -p 8087:3000 \
-  -p 8082:8080 -p 8083:8087 -p 8084:8000 \
-  -p 8888:80 -p 30080:80 \
-  -p 8443:443 -p 30443:443 \
-  -p 8025:8025 \
-  -p 8085:80 \
-  martiandefense/redplanet-appsec:latest
+docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
 ```
 ---
