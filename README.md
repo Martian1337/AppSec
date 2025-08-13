@@ -1,7 +1,9 @@
 # Martian's Hands-on AppSec Training Resources
 
 
-# 1. Self-Hosted Mini AppSec Range (Docker)
+# 1. RedPlanet Appsec Range - Self-Hosted Mini AppSec Range (Docker)
+
+A plug-and-play application security mini-range built with Docker Compose, designed for learning, teaching, and testing common web and API vulnerabilities.
 
 ## **Prerequisites**
 
@@ -56,9 +58,6 @@ sudo docker pull martiandefense/redplanet-appsec:latest && sudo docker run --pri
   martiandefense/redplanet-appsec:latest
 ```
 
-#  RedPlanet Appsec Range
-
-A plug-and-play application security mini-range built with Docker Compose, designed for learning, teaching, and testing common web and API vulnerabilities.
 
 ## What's Included
 
