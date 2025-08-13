@@ -1,7 +1,7 @@
 # Martian's Hands-on AppSec Training Resources
 
 
-# Self-Hosted Mini AppSec Range (Docker)
+# 1. Self-Hosted Mini AppSec Range (Docker)
 
 ## **Prerequisites**
 
