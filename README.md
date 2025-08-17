@@ -62,7 +62,7 @@ This environment includes the following intentionally vulnerable applications an
 | Juice Shop     | Modern insecure web app with rich OWASP coverage             | 8087                     | [http://localhost:8087](http://localhost:8087)|
 | crAPI          | "Completely Ridiculous API" for API security hands-on labs   | Multiple (8082–8084, 8888, 8443) | [http://localhost:8888](http://localhost:8888) |
 | MailHog        | Email testing interface for crAPI mail features              | 8025                     | [http://localhost:8025](http://localhost:8025) |
-| Metasploitable2 | Intentionally vulnerable VM. Active services are DNS,Tomcat and HTTP | Multiple (8081, 8180, 53) | http://localhost:8081, http://localhost:8180, http://localhost:8180/dvwa, http://localhost:8081/mutillidae/ |
+| Metasploitable2 | Intentionally vulnerable VM. Active services are DNS,Tomcat and HTTP | Multiple (8081, 53) | http://localhost:8081, http://localhost:8081/dvwa, http://localhost:8081/mutillidae/ |
 | ------         |
 | PostgreSQL     | Backend DB for crAPI                                         | Internal                 |
 | MongoDB        | NoSQL DB used by crAPI                                       | Internal                 |
