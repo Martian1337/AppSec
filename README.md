@@ -48,7 +48,7 @@ Before running the RedPlanet AppSec Training Range, please ensure the following:
 
 ### TL;DR - One-line version to pull image and start environment
 ```bash
-sudo docker pull martiandefense/redplanet-appsec:latest && docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
+sudo docker pull martiandefense/redplanet-appsec:latest && sudo docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
 ```
 
 
