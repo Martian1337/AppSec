@@ -86,3 +86,22 @@ docker pull martiandefense/redplanet-appsec:latest
 sudo docker run -v /var/run/docker.sock:/var/run/docker.sock martiandefense/redplanet-appsec:latest
 ```
 > **_NOTE:_**  The vulnerable machine only version of this range is available at the tag `:pentest` by replacing the above image with `martiandefense/redplanet-appsec:pentest`
+> 
+---
+
+
+# 2. BugFlow
+
+**BugFlow** is a DevSecOps pipeline designed for secure multi-language application development using Jenkins.  
+It automates security checks throughout the software development lifecycle, integrating static code analysis, dependency checking, container scanning, and deployment best practices.  
+BugFlow streamlines the process of embedding security tools into CI/CD workflows, helping teams manage risks and ship secure software faster.
+
+- Repository: [BugFlow Repo](https://github.com/Martian1337/BugFlow)
+- Features:
+  - Jenkins-based automation for security and compliance
+  - Supports multiple programming languages
+  - Easily extensible to add new security checks or tools
+ 
+![BugFlow](https://github.com/Martian1337/BugFlow/blob/main/BugFlow.png)
+
+---
