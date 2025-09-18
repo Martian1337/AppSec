@@ -105,3 +105,21 @@ BugFlow streamlines the process of embedding security tools into CI/CD workflows
 ![BugFlow](https://github.com/Martian1337/BugFlow/blob/main/BugFlow.png)
 
 ---
+
+# 3. Static Application Security Testing (SAST)
+
+Having effective AppSec includes conducting static analysis and secure code reviews. This is essential for both development and security research. The [Martian1337/SAST](https://github.com/Martian1337/SAST) repository enables SAST across major programming languages.
+
+- Automates scans for Python, JavaScript, Java, PHP, Go, and more (Bandit, ESLint, PHPStan, SpotBugs, etc.).
+- Includes Bash scripts (e.g., `pyscan.sh`, `javascan.sh`) for workflow automation in CI/CD pipelines or pre-commit hooks.
+- Accelerates early detection of code-level vulnerabilities—including SQL injection, XSS, memory corruption, and insecure crypto.
+- Helps enforce secure coding standards and compliance requirements, providing auditable reports for frameworks like OWASP Top 10, CWE, and PCI-DSS.
+
+### SAST for Security Research
+
+SAST tools are vital for security researchers analyzing source code to find novel or overlooked vulnerabilities at scale. Researchers use SAST to:
+
+- Systematically uncover risky patterns, such as hardcoded secrets, unsafe functions, and tainted data flows, even in large open-source projects.
+- Build custom detection rules and signatures for new types of vulnerabilities, advancing the state of the art in automated analysis.
+- Triage and prioritize vulnerabilities by mapping results to industry standards and risk models.
+- Facilitate continuous research by integrating scans into experiments, CTFs, and advanced secure code audits.
